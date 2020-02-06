@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <h1 id="ref">C#</h1>
+    <h2></h2>
+    <h3 name="n1"></h3>
+    <h1 class="ref1"></h1>
+    <h2></h2>
+    <script type="text/javascript">
+        /*script loaded after html page*/
+        alert("Welcome to javascript");
+        console.log("Hi javascript");
+        var length = 10;
+        var name = document.getElementById("ref").textContent;
+        var student = { name: "Raj", age: 18, id: 100 };
+
+        //document.getElementById("ref").innerHTML = student.name + " " + student.age + " " + student.id;
+        //document.getElementById("n1").innerHTML = name + " " + length;
+
+        //document.getElementById("ref").innerHTML = "Hello";
+        document.getElementsByTagName("H2")[0].innerHTML = "Welcome";
+        document.getElementsByName("n1")[0].innerHTML = "to CTS";
+        document.getElementsByClassName("ref1")[0].innerHTML = "Chennai"+" "+name;
+    </script>
+</body>
+</html>

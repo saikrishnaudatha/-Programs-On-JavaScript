@@ -1,0 +1,12 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h3>Array Values are</h3>
+    <script src="JavaScript.js" language="javascript" type="text/javascript"></script>
+    <br />
+</body>
+</html>

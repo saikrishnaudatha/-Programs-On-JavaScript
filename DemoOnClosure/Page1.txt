@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <!--Inner Function can access the outer function variables
+         and parameters of outer function after outer function returns--> 
+
+
+    <h3>Closure Demo Done</h3>
+    <script>
+        function OuterFunction() {
+            var outvar = 100;
+
+            function InnerFunction() {
+                outvar++;
+                alert(outvar);
+            }
+            return InnerFunction;
+        }
+
+        //Since inner function is inside of outer function we cannot directly call inner function, so we use reference of outer function
+
+        var innerfunc = OuterFunction();
+
+        innerfunc();
+        innerfunc();
+        innerfunc();
+
+    </script>
+</body>
+</html>

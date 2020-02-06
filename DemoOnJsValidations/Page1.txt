@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="JavaScript.js"></script>
+    <title></title>
+</head>
+<body>
+    <div>
+        <form id="f1" action="valid.html" onsubmit="return show()" method="get">
+            <h1>User Registration Details</h1>
+            <h3>Fill the following details and get registered !!</h3><br /><br />
+            <table align="center" border="1" bordercolor="white" cellpadding="10px" bgcolor="beige">
+                <tr>
+                    <td>FirstName :</td>
+                    <td><input type="text" required name="name1" id="txtbox1" onblur="changeColor(this)" /></td>
+                </tr>
+                <tr>
+                    <td>LastName :</td>
+                    <td><input type="text" name="name2" id="txtbox2" onblur="changeColor(this)" /></td>
+                </tr>
+                <tr>
+                    <td>Age :</td>
+                    <td><input type="number" name="age_box" id="age" onblur="changeColor(this)" /></td>
+                </tr>
+                <tr>
+                    <td>Address :</td>
+                    <td><textarea type="text" name="address_box" rows="5" id="address" onblur="changeColor(this)" ></textarea></td>
+                </tr>
+                <tr>
+                    <td>Gender :</td> 
+                    <td>
+                        <select name="gender" id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </td>
+                </tr>
+
+            </table>
+            <br/>
+            <input type="submit" value="Register Me" />
+        </form>
+    </div>
+</body>
+</html>

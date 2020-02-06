@@ -1,0 +1,20 @@
+﻿//var username = "Bill";
+
+//function display(name) {
+//    alert("JavaScript1.js : " + name);
+//}
+//display(username);
+
+// Anonymous function syntax  :  (function(){})();  i.e., iife Format
+
+
+(function () {
+    var username = "Bill";
+
+    function display(name) {
+        alert("JavaScript1.js : " + name);
+    }
+    display(username);
+})();
+
+

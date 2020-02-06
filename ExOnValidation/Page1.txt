@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript"></script>
+    <script>
+        function validate() {
+
+            if (document.myform.name.value == "") {
+                alert("Please provide your name ! ");
+                    document.myform.name.focus();
+                    return false;
+
+                }
+
+            if (document.myform.name.value != "") {
+
+                var pat = /[a-z]{2,30}/;
+                if (pat.test(document.myform.name.value) == false) {
+                    alert("Name cannot be a number or a capital number! ");
+                    document.myform.name.focus();
+                    return false;
+                }
+                }
+                if (document.myform.password.value == "") {
+                    alert("Password cannot be empty");
+                    document.myform.password.focus();
+                    return false;
+                }
+                return (true);
+
+            }
+        
+    </script>
+</head>
+<body>
+    <div>
+        <form name="myform" onsubmit="return (validate())">
+
+            <h1>Personal Details</h1>
+
+            <table align="left" border="1" bordercolor="white">
+                <tr>
+                    <td>Name :</td>  
+                    <td><input type="text" id="name" /></td>
+                </tr>
+
+                <tr>
+                    <td>Gender :</td>
+                    <td>
+                        Male<input type="radio" name="gender" value="male" />
+
+                        Female<input type="radio" name="gender" value="female" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Home Town :</td>
+                    <td>
+                        <select name="HomeTown" id="HomeTown">
+                            <option value="New Delhi">New Delhi</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Banglore">Banglore</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Address :</td>
+                    <td><textarea type="text" name="address_box" rows="5" id="address"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td>Skills</td>
+                    <td>
+                        <input type="checkbox" />Java
+                        <input type="checkbox" />Html
+                        <input type="checkbox" />C#
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Password :</td>
+                    <td><input type="password" name="password" /></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="submit" value="Submit" />
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+</body>
+</html>

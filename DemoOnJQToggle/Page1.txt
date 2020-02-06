@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("p").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <p>I am Paragraph 1</p>
+    <p>I am Paragraph 2</p>
+    <button>Toggle</button>
+</body>
+</html>
